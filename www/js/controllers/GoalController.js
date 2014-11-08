@@ -3,8 +3,6 @@ angular.module('goalCtrl', [])
 		init();
 		function init() {
 
-			console.log("goal controller init");
-
 			/**
 			 * Possible prompts to display to the user.
 			 */
@@ -12,10 +10,12 @@ angular.module('goalCtrl', [])
 				[
 					"What do you want to get done today?",
 					"Got a goal for today?",
-					"Any itches that need scratching?",
-					"What's a project that needs to get tackled today?",
-					"Don't procrastinate! Do that big thing today."
+					"Got goals?",
+					"What are you hoping to complete today?",
+					"What's your goal for the day?",
+					"Choose a goal. Complete a goal.",
+					"Any big itches that you need to scratch today?",
 				];
-			$scope.prompt = prompts[Math.random() * prompts.length];
+			$scope.prompt = prompts[Math.floor(Math.random() * prompts.length)];
 		}
 	})

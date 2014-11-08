@@ -7815,9 +7815,17 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   -webkit-transition: none !important;
   transition: none !important; }
 
-#goal-template #goal-prompt-container {
-  width: 75vw;
-  height: 75vw;
-  border-radius: 75vw;
-  background-color: #FF9800;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); }
+#goal-template {
+  font-family: 'Roboto', sans-serif; }
+  #goal-template #goal-prompt-container {
+    width: 75vw;
+    height: 75vw;
+    border-radius: 75vw;
+    background-color: #FF9800;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFF;
+    padding: 0px 30px;
+    text-align: center; }
