@@ -2,7 +2,7 @@
 
 	font-family: 'Roboto', sans-serif;
 	
-	.goal-view {
+	#goal-view {
 		width: 75vw;
 		height: 75vw;
 		border-radius: 75vw;
@@ -17,16 +17,17 @@
 		overflow: hidden;
 		white-space: inherit;
 		text-transform: none;
-		transition: all 0.2s ease-out;
+		z-index: 500;
 
 		#goal-prompt {
 			color: #FFF;
 		}
 
-		&.ng-click-active {
-			box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.7);
-			-webkit-transform: translate3d(0, -10px, 0);
-          			transform: translate3d(0, -10px, 0);
+		// uses the default md-button animation class
+		&.activated {
+			box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.6) !important;
+			-webkit-transform: translate3d(0, -12px, 0) !important;
+          			transform: translate3d(0, -12px, 0) !important;
 		}
 	}
 }

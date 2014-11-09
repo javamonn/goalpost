@@ -20,12 +20,5 @@ angular.module('goalCtrl', [])
 
 			// select random prompt to display
 			$scope.prompt = prompts[Math.floor(Math.random() * prompts.length)];
-
-			// whether the input view is active
-			$scope.inputViewActive = false;
-		}
-
-		$scope.goalTapped = function () {
-			
 		}
 	})
