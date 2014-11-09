@@ -6,6 +6,7 @@
 var goalpost = angular.module('goalpost', [
   'ionic',
   'ngMaterial',
+  'ngTouch',
   'goalCtrl'
 
 ]);

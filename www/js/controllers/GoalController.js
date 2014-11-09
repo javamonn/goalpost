@@ -1,5 +1,5 @@
 angular.module('goalCtrl', [])
-	.controller('GoalController', function ($scope) {
+	.controller('GoalController', function ($scope, $animate) {
 		init();
 		function init() {
 
@@ -11,11 +11,21 @@ angular.module('goalCtrl', [])
 					"What do you want to get done today?",
 					"Got a goal for today?",
 					"Got goals?",
+					"Tell me all of your goals!",
 					"What are you hoping to complete today?",
 					"What's your goal for the day?",
 					"Choose a goal. Complete a goal.",
-					"Any big itches that you need to scratch today?",
+					"Any itches that you want to scratch today?",
 				];
+
+			// select random prompt to display
 			$scope.prompt = prompts[Math.floor(Math.random() * prompts.length)];
+
+			// whether the input view is active
+			$scope.inputViewActive = false;
+		}
+
+		$scope.goalTapped = function () {
+			
 		}
 	})

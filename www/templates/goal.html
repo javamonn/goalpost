@@ -1,5 +1,8 @@
 <ion-view id="goal-template" layout="vertical" layout-align="center center">
-	<div id="goal-prompt-container" class="inactive" layout="vertical" layout-align="center center">
+	<md-button 
+	id="goal-view"
+	class="md-fab goal-view"
+	ng-click="goalTouched()">
 
 		<!-- text prompt -->
 		<span id="goal-prompt">{{ prompt }}</span>
@@ -8,5 +11,5 @@
 		<div id="input-wrapper" class="hidden" layout="vertical" layout-align="start center">
 
 		</div>
-	</div>
+	</md-button>
 </ion-view>

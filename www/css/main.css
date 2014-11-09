@@ -7817,15 +7817,25 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 
 #goal-template {
   font-family: 'Roboto', sans-serif; }
-  #goal-template #goal-prompt-container {
+  #goal-template .goal-view {
     width: 75vw;
     height: 75vw;
     border-radius: 75vw;
+    border: solid 1px rgba(0, 0, 0, 0.12);
     background-color: #FF9800;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     font-weight: 300;
     font-size: 24px;
     line-height: 24px;
-    color: #FFF;
     padding: 0px 30px;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden;
+    white-space: inherit;
+    text-transform: none;
+    transition: all 0.2s ease-out; }
+    #goal-template .goal-view #goal-prompt {
+      color: #FFF; }
+    #goal-template .goal-view.ng-click-active {
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.7);
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0); }
